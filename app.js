@@ -62,7 +62,24 @@
 //---------------------------------------------
 //dom manupulation
 //console.log(document);
-console.log(document.title);
+// console.log(document.title);
+let heading = document.getElementById("heading");
+
+// heading.innerText = "Sharada";
+
+// console.log(heading.);
+let number = 0;
+function changeHeadingIncrement() {
+    heading.innerText = "Sharada"+number++;
+    console.log("Clicked");
+    
+}
+function changeHeadingDecremenet() {
+    heading.innerText = "Sharada"+number--;
+    console.log("Clicked");
+    
+}
+
 
 
 
