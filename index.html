@@ -1,34 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="title">Dom</title>
-</head>
-<body>
-     <!-- <h1 id="heading">Hello, World!</h1>
+  </head>
+  <body>
+    <!-- <h1 id="heading">Hello, World!</h1>
 
     <input type="button" value="+" onclick="changeHeadingIncrement()">
     <input type="button" value="-" onclick="changeHeadingDecremenet()">
 
     <input type ="text" placeholder="enter value" -->
-    
+
     <!-- <input type="text" placeholder="Enter Number 01" id="inputText01">
     <input type="text" placeholder="Enter Number 02" id="inputText02">
     <h1 id="heading">Output</h1>
     <input type="button" value="+" onclick="changeHeading()">
     <input type="button" value="-" onclick="changeHeading()">
- --> <h1>Customer Manager</h1>
+ -->
+    <h1>Customer Manager</h1>
 
-    <input type="text" placeholder="name" id="txtName">
-    <input type="text" placeholder="address" id="txtAddress">
-    <input type="text" placeholder="age" id="txtAge">
-    <input type="text" placeholder="email" id="txtEmail">
-    <input type="text" placeholder="salary" id="txtSalary">
+    <input type="text" placeholder="name" id="txtName" />
+    <input type="text" placeholder="address" id="txtAddress" />
+    <input type="text" placeholder="age" id="txtAge" />
+    <input type="text" placeholder="email" id="txtEmail" />
+    <input type="text" placeholder="salary" id="txtSalary" />
 
-    <input type="button" value="Add Customer" onclick="btnAddCustomerOnAction()">
+    <input
+      type="button"
+      value="Add Customer"
+      onclick="btnAddCustomerOnAction()"
+    />
 
+    <table border="1" id="tblCustomers">
+      <tr>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Age</td>
+        <td>Email</td>
+        <td>Salary</td>
+      </tr>
+    </table>
 
-    <Script src="app.js"></Script>   
-</body>
+    <input type="button" value="Load Table" onclick="loadTable()" />
+
+    <script src="app.js"></script>
+  </body>
 </html>
