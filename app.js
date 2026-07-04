@@ -63,26 +63,79 @@
 //dom manupulation
 //console.log(document);
 // console.log(document.title);
-let heading = document.getElementById("heading");
+//let heading = document.getElementById("heading");
 
 // heading.innerText = "Sharada";
 
 // console.log(heading.);
-let number = 0;
-function changeHeadingIncrement() {
-    heading.innerText = "Sharada"+number++;
-    console.log("Clicked");
+// let number = 0;
+// function changeHeadingIncrement() {
+//     heading.innerText = "Sharada"+number++;
+//     console.log("Clicked");
     
-}
-function changeHeadingDecremenet() {
-    heading.innerText = "Sharada"+number--;
-    console.log("Clicked");
+// }
+// function changeHeadingDecremenet() {
+//     heading.innerText = "Sharada"+ --number;
+//     console.log("Clicked");
     
+// }
+
+// function changeHeading(){
+//     let textInput = document.getElementById("inputText");
+//     console.log(textInput.value);
+    
+// }
+
+// function changeHeading() {
+
+//     let txtInput = document.getElementById("inputText");
+
+//     let userInput = txtInput.value; 
+
+//     console.log(userInput);
+    
+//     let heading = document.getElementById("heading");
+
+//     heading.innerText=userInput;
+
+    
+// }
+// function btnSumOnAction() {
+//     let input01 = document.getElementById("txtInput01").value;
+//     let input02 = document.getElementById("txtInput02").value;
+
+//     let sum = parseInt(input01)+parseInt(input02);
+//     // let sum = Number(input01)+Number(input02);
+
+//     document.getElementById("heading").innerText="SUM : "+sum
+
+    
+
+//     console.log(input01);
+//     console.log(input02);
+//     console.log(sum);
+
+// }
+
+let customerList = [];
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
+      
 }
-
-
-
-
-
-
- 
