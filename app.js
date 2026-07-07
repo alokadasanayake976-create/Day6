@@ -157,24 +157,49 @@
 
 //////////////////////////////////////////////////////////////////////////////////
 //------------  Simple calculator-----------------
-const display = document.getElementById('display');
+// const display = document.getElementById('display');
 
-// Add strings or symbols into the input box
-function appendValue(input) {
-    display.value += input;
-}
+// function appendValue(input) {
+//     display.value += input;
+// }
 
-// Empty out the display window completely
-function clearDisplay() {
-    display.value = '';
-}
+// function clearDisplay() {
+//     display.value = '';
+// }
+ 
+// function calculate() {
+//     try {
+        
+//         display.value = eval(display.value);
+//     } catch (error) {
+//         display.value = 'Error';
+//     }
+// }
+//////////////////////////////////////////////////////////////////////////////////
+ const form = document.getElementById('userForm');
+        const tableBody = document.getElementById('tableBody');
 
-// Run calculation logic safely using string parsing 
-function calculate() {
-    try {
-        // eval processes standard math symbols from raw strings
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = 'Error';
-    }
-}
+        // Listen for the form submission
+        form.addEventListener('submit', function(event) {
+            // Prevent the default browser reload action on submit
+            event.preventDefault();
+
+            // Retrieve values from the input fields
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+
+            // Create a new table row element
+            const newRow = document.createElement('tr');
+
+            // Insert HTML structure for the new cells
+            newRow.innerHTML = `
+                <td>${name}</td>
+                <td>${email}</td>
+            `;
+
+            // Append the new row to the table body
+            tableBody.appendChild(newRow);
+
+            // Reset the form fields for the next entry
+            form.reset();
+        });
