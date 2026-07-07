@@ -117,40 +117,64 @@
 
 // }
 
-let customerList = [];
+// let customerList = [];
 
-function btnAddCustomerOnAction(){
-    let txtName = document.getElementById("txtName").value;
-    let txtAddress = document.getElementById("txtAddress").value;
-    let txtAge = document.getElementById("txtAge").value;
-    let txtEmail = document.getElementById("txtEmail").value;
-    let txtSalary = document.getElementById("txtSalary").value;
+// function btnAddCustomerOnAction(){
+//     let txtName = document.getElementById("txtName").value;
+//     let txtAddress = document.getElementById("txtAddress").value;
+//     let txtAge = document.getElementById("txtAge").value;
+//     let txtEmail = document.getElementById("txtEmail").value;
+//     let txtSalary = document.getElementById("txtSalary").value;
 
-    let customer={
-        name:txtName,
-        address:txtAddress,
-        age:txtAge,
-        email:txtEmail,
-        salary:txtSalary
-    }
+//     let customer={
+//         name:txtName,
+//         address:txtAddress,
+//         age:txtAge,
+//         email:txtEmail,
+//         salary:txtSalary
+//     }
 
-    customerList.push(customer);
+//     customerList.push(customer);
 
-    console.log(customerList);
+//     console.log(customerList);
       
+// }
+
+// function loadTable(){
+//     let tblCustomers = document.getElementById("tblCustomers");
+
+//     tblCustomers.innerHTML+=`<tr>
+//             <td>Saman</td>
+//             <td>Walana</td>
+//             <td>15</td>
+//             <td>saman@email.com</td>
+//             <td>750000</td>
+//         </tr>`
+
+//     console.log(tblCustomers);
+    
+// }
+
+//////////////////////////////////////////////////////////////////////////////////
+//------------  Simple calculator-----------------
+const display = document.getElementById('display');
+
+// Add strings or symbols into the input box
+function appendValue(input) {
+    display.value += input;
 }
 
-function loadTable(){
-    let tblCustomers = document.getElementById("tblCustomers");
+// Empty out the display window completely
+function clearDisplay() {
+    display.value = '';
+}
 
-    tblCustomers.innerHTML+=`<tr>
-            <td>Saman</td>
-            <td>Walana</td>
-            <td>15</td>
-            <td>saman@email.com</td>
-            <td>750000</td>
-        </tr>`
-
-    console.log(tblCustomers);
-    
+// Run calculation logic safely using string parsing 
+function calculate() {
+    try {
+        // eval processes standard math symbols from raw strings
+        display.value = eval(display.value);
+    } catch (error) {
+        display.value = 'Error';
+    }
 }
