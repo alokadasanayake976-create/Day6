@@ -176,30 +176,32 @@
 //     }
 // }
 //////////////////////////////////////////////////////////////////////////////////
- const form = document.getElementById('userForm');
-        const tableBody = document.getElementById('tableBody');
+//  const form = document.getElementById('userForm');
+//         const tableBody = document.getElementById('tableBody');
 
-        // Listen for the form submission
-        form.addEventListener('submit', function(event) {
-            // Prevent the default browser reload action on submit
-            event.preventDefault();
+    
+//         form.addEventListener('submit', function(event) {
+            
+//             event.preventDefault();
 
-            // Retrieve values from the input fields
-            const name = document.getElementById('userName').value;
-            const email = document.getElementById('userEmail').value;
+            
+//             const name = document.getElementById('userName').value;
+//             const email = document.getElementById('userEmail').value;
 
-            // Create a new table row element
-            const newRow = document.createElement('tr');
+            
+//             const newRow = document.createElement('tr');
 
-            // Insert HTML structure for the new cells
-            newRow.innerHTML = `
-                <td>${name}</td>
-                <td>${email}</td>
-            `;
+            
+//             newRow.innerHTML = `
+//                 <td>${name}</td>
+//                 <td>${email}</td>
+//             `;
 
-            // Append the new row to the table body
-            tableBody.appendChild(newRow);
+            
+//             tableBody.appendChild(newRow);
 
-            // Reset the form fields for the next entry
-            form.reset();
-        });
+            
+//             form.reset();
+//         });
+//////////////////////////////////////////////////////////////////////////////////////////////
+//-------------------simple search bar ---------------------------
