@@ -205,3 +205,6 @@
 //         });
 //////////////////////////////////////////////////////////////////////////////////////////////
 //-------------------simple search bar ---------------------------
+  function searchItem() {
+            let input = document.getElementById("searchBox").value.toLowerCase();
+            let items = document.getElementById("myList").getElementsByTagName("li");
