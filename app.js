@@ -208,3 +208,5 @@
   function searchItem() {
             let input = document.getElementById("searchBox").value.toLowerCase();
             let items = document.getElementById("myList").getElementsByTagName("li");
+            for (let i = 0; i < items.length; i++) {
+                let text = items[i].textContent.toLowerCase();
