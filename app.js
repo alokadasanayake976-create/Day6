@@ -205,15 +205,19 @@
 //         });
 //////////////////////////////////////////////////////////////////////////////////////////////
 //-------------------simple search bar ---------------------------
-  function searchItem() {
-            let input = document.getElementById("searchBox").value.toLowerCase();
-            let items = document.getElementById("myList").getElementsByTagName("li");
-            for (let i = 0; i < items.length; i++) {
-                let text = items[i].textContent.toLowerCase();
-            if (text.includes(input)) {
-                    items[i].style.display = "";
-                } else {
-                    items[i].style.display = "none";
-                }
-            }
-        }
+//   function searchItem() {
+//             let input = document.getElementById("searchBox").value.toLowerCase();
+//             let items = document.getElementById("myList").getElementsByTagName("li");
+//             for (let i = 0; i < items.length; i++) {
+//                 let text = items[i].textContent.toLowerCase();
+//             if (text.includes(input)) {
+//                     items[i].style.display = "";
+//                 } else {
+//                     items[i].style.display = "none";
+//                 }
+//             }
+//         }
+//////////////////////////////////////////////////////////////////////////////////////
+////-----------------------Add student form------------------
+
+function addStudent(){
