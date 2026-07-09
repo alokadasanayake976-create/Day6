@@ -230,5 +230,13 @@ function addStudent(){
         alert("Please fill all fields.");
         return;
     }
-    
+     let table = document.getElementById("studentTable");
+
+    let row = table.insertRow();
+
+    row.insertCell(0).innerHTML = id;
+    row.insertCell(1).innerHTML = name;
+    row.insertCell(2).innerHTML = age;
+    row.insertCell(3).innerHTML = course;
+
 }
