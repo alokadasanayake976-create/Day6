@@ -239,4 +239,9 @@ function addStudent(){
     row.insertCell(2).innerHTML = age;
     row.insertCell(3).innerHTML = course;
 
+     document.getElementById("id").value="";
+    document.getElementById("name").value="";
+    document.getElementById("age").value="";
+    document.getElementById("course").value="";
+
 }
