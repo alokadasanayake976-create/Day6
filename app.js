@@ -221,3 +221,7 @@
 ////-----------------------Add student form------------------
 
 function addStudent(){
+     let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+    let course = document.getElementById("course").value;
