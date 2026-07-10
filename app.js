@@ -238,13 +238,40 @@
 //////////////////////////////////////////////////////////////////////
 function updateDateTime() {
   const now = new Date();
-   const days = [
-        "Sunday","Monday","Tuesday","Wednesday",
-        "Thursday","Friday","Saturday"
-    ];
-    const months = [
-        "January","February","March","April",
-        "May","June","July","August",
-        "September","October","November","December"
-    ];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  document.getElementById("day").innerHTML = "Day: " + days[now.getDay()];
+
+  document.getElementById("date").innerHTML = "Date: " + now.getDate();
+
+  document.getElementById("month").innerHTML =
+    "Month: " + months[now.getMonth()];
+
+  document.getElementById("year").innerHTML = "Year: " + now.getFullYear();
+
+  document.getElementById("time").innerHTML = now.toLocaleTimeString();
 }
+
+updateDateTime();
+setInterval(updateDateTime, 1000);
