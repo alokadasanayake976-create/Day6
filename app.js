@@ -238,4 +238,8 @@
 //////////////////////////////////////////////////////////////////////
 function updateDateTime() {
   const now = new Date();
+   const days = [
+        "Sunday","Monday","Tuesday","Wednesday",
+        "Thursday","Friday","Saturday"
+    ];
 }
