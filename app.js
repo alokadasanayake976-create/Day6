@@ -33,7 +33,7 @@
 //                     id: 2,
 //                     name: "variant2",
 //                     price: 20
-                    
+
 //                 }
 //             ]
 //         }, {
@@ -72,33 +72,32 @@
 // function changeHeadingIncrement() {
 //     heading.innerText = "Sharada"+number++;
 //     console.log("Clicked");
-    
+
 // }
 // function changeHeadingDecremenet() {
 //     heading.innerText = "Sharada"+ --number;
 //     console.log("Clicked");
-    
+
 // }
 
 // function changeHeading(){
 //     let textInput = document.getElementById("inputText");
 //     console.log(textInput.value);
-    
+
 // }
 
 // function changeHeading() {
 
 //     let txtInput = document.getElementById("inputText");
 
-//     let userInput = txtInput.value; 
+//     let userInput = txtInput.value;
 
 //     console.log(userInput);
-    
+
 //     let heading = document.getElementById("heading");
 
 //     heading.innerText=userInput;
 
-    
 // }
 // function btnSumOnAction() {
 //     let input01 = document.getElementById("txtInput01").value;
@@ -108,8 +107,6 @@
 //     // let sum = Number(input01)+Number(input02);
 
 //     document.getElementById("heading").innerText="SUM : "+sum
-
-    
 
 //     console.log(input01);
 //     console.log(input02);
@@ -137,7 +134,7 @@
 //     customerList.push(customer);
 
 //     console.log(customerList);
-      
+
 // }
 
 // function loadTable(){
@@ -152,7 +149,7 @@
 //         </tr>`
 
 //     console.log(tblCustomers);
-    
+
 // }
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -166,10 +163,10 @@
 // function clearDisplay() {
 //     display.value = '';
 // }
- 
+
 // function calculate() {
 //     try {
-        
+
 //         display.value = eval(display.value);
 //     } catch (error) {
 //         display.value = 'Error';
@@ -179,28 +176,22 @@
 //  const form = document.getElementById('userForm');
 //         const tableBody = document.getElementById('tableBody');
 
-    
 //         form.addEventListener('submit', function(event) {
-            
+
 //             event.preventDefault();
 
-            
 //             const name = document.getElementById('userName').value;
 //             const email = document.getElementById('userEmail').value;
 
-            
 //             const newRow = document.createElement('tr');
 
-            
 //             newRow.innerHTML = `
 //                 <td>${name}</td>
 //                 <td>${email}</td>
 //             `;
 
-            
 //             tableBody.appendChild(newRow);
 
-            
 //             form.reset();
 //         });
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -220,28 +211,27 @@
 //////////////////////////////////////////////////////////////////////////////////////
 ////-----------------------Add student form------------------
 
-function addStudent(){
-     let id = document.getElementById("id").value;
-    let name = document.getElementById("name").value;
-    let age = document.getElementById("age").value;
-    let course = document.getElementById("course").value;
+function addStudent() {
+  let id = document.getElementById("id").value;
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let course = document.getElementById("course").value;
 
-    if(id=="" || name=="" || age=="" || course==""){
-        alert("Please fill all fields.");
-        return;
-    }
-     let table = document.getElementById("studentTable");
+  if (id == "" || name == "" || age == "" || course == "") {
+    alert("Please fill all fields.");
+    return;
+  }
+  let table = document.getElementById("studentTable");
 
-    let row = table.insertRow();
+  let row = table.insertRow();
 
-    row.insertCell(0).innerHTML = id;
-    row.insertCell(1).innerHTML = name;
-    row.insertCell(2).innerHTML = age;
-    row.insertCell(3).innerHTML = course;
+  row.insertCell(0).innerHTML = id;
+  row.insertCell(1).innerHTML = name;
+  row.insertCell(2).innerHTML = age;
+  row.insertCell(3).innerHTML = course;
 
-     document.getElementById("id").value="";
-    document.getElementById("name").value="";
-    document.getElementById("age").value="";
-    document.getElementById("course").value="";
-
+  document.getElementById("id").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("course").value = "";
 }
